@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="top-bar">
+      <input id="name" value="username">
+      <button onclick="startChat()">Start Chat</button>
+    </div>
+    <div id="chat-area">
+      <ul id="messages"></ul>
+    </div>
+    <button onclick="toggleUserList()" id="users-toggle-btn">Users</button>
+    <div id="users-area">
+      <ul id="users-list">users</ul>
+    </div>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
