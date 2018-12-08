@@ -16,7 +16,7 @@ function startChat(){
       return false;
     });
     socket.on('chat message', function(msg, username){
-      $('#messages').append($('<div class="username">').text(username));
+      $('#messages').append($('<div class="username">').text(username+": "));
       $('#messages').append($('<li>').text(msg));
       window.scrollTo(0, document.body.scrollHeight);
     });

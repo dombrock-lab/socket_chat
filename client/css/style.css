@@ -39,20 +39,26 @@ input{
     top:0;
     left:0;
     right:0;
-    height:10vh;
+    height:8vh;
 }
 #chat-area{
     margin-top:10vh;
+    margin-bottom:10vh;
 }
 #messages {
     list-style-type: none; 
     margin: 0; 
     padding: 0; 
     width:75%;
+    max-width:1000px;
 }
-#messages li { padding: 2em; }
-#messages li:nth-child(odd) { background: rgb(73, 73, 73); }
-#messages { margin-bottom: 40px }
+#messages li { 
+    padding: 1em;
+    margin:1em;
+    background:rgb(73, 73, 73);;
+ }
+#messages li:nth-child(odd) { xbackground: rgb(73, 73, 73); }
+#messages { margin-bottom: 40px; }
 #users-title{
     position:fixed;
     top:0;
@@ -65,7 +71,7 @@ input{
     position:fixed;
     top:0;
     right:0;
-    padding-top:10vh;
+    padding-top:8vh;
     background:rgb(31, 31, 31);
 }
 #users-toggle-btn{
@@ -109,6 +115,7 @@ input{
 
 .username{
     padding:1em;
+    padding-bottom:0.5em;
     text-transform: uppercase;
 }
 
@@ -130,5 +137,5 @@ input{
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(131, 243, 108); 
+    background: rgb(31, 31, 31); 
   }
